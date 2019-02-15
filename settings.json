@@ -1,0 +1,80 @@
+{
+  files.autoSave: onFocusChange,
+  editor.minimap.enabled: true,
+
+  // auto prettier on save
+  editor.formatOnSave: true,
+
+  // turn off prettier for JS
+  [javascript]: {
+    editor.formatOnSave: false
+  },
+
+  // custom workbench colours
+  workbench.statusBar.visible: true,
+  workbench.activityBar.visible: true,
+  workbench.colorTheme: City Lights,
+
+  workbench.colorCustomizations: {
+    statusBar.background: #135564,
+    editor.selectionBackground: #135564,
+    editor.selectionHighlightBackground: #135564,
+    editor.inactiveSelectionBackground: #135564,
+    statusBar.debuggingBackground: #135564,
+    editorLineNumber.foreground: #999999
+  },
+
+  // editor configuration
+  editor.codeLens: true,
+  editor.fontFamily: Fira Code,
+  editor.fontWeight: 400,
+  editor.fontLigatures: true,
+  editor.fontSize: 14,
+  editor.wordWrap: on,
+  editor.lineHeight: 28,
+  editor.insertSpaces: true,
+  editor.detectIndentation: false,
+  editor.tabSize: 2,
+  editor.letterSpacing: 0.5,
+  editor.cursorStyle: line,
+  editor.renderWhitespace: all,
+  editor.cursorBlinking: solid,
+  prettier.eslintIntegration: true,
+
+  // comments/puncuation style and colour
+  editor.tokenColorCustomizations: {
+    comments: #ffc600,
+    textMateRules: [
+      {
+        scope: comment,
+        settings: {
+          fontStyle: italic
+        },
+        scope: punctuation,
+        settings: {
+          foreground: #ffffff
+        }
+      }
+    ]
+  },
+
+  css.validate: false,
+  scss.validate: false,
+  less.validate: false,
+  workbench.iconTheme: vscode-great-icons,
+  search.location: panel,
+  window.zoomLevel: 0,
+  explorer.confirmDragAndDrop: false,
+  emmet.includeLanguages: {
+    twig: html
+  },
+
+  // eslint
+  eslint.autoFixOnSave: true,
+  eslint.enable: true,
+  eslint.alwaysShowStatus: true,
+  files.associations: {
+    *.html: html
+  }
+}
+
